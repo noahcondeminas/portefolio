@@ -288,22 +288,19 @@
                 <h2 id="projet1-titre">Projet 1 : titre du projet</h2>
                 <button type="button" class="modal-close" aria-label="Fermer">&times;</button>
             </div>
-            <h3>Contexte</h3>
-            <p>Décris ici le contexte du projet (cadre, besoin, entreprise ou scénario).</p>
-            <h3>Objectifs</h3>
-            <p>Ce que le projet devait permettre de faire.</p>
+                        <h3>Contexte</h3>
+            <p>Premier projet de ma première année de BTS SIO, réalisé en binôme avec Sofiane Debza : relier les deux sites, Marseille et Paris, d'une entreprise fictive de vente de voitures (AutoPro), sur des machines virtuelles VMware.</p>
+            <img src="img/projet1.png" alt="Schéma de l'architecture réseau : deux pare-feu, Paris et Marseille, reliés par un VPN">
             <h3>Technologies utilisées</h3>
-            <ul>
-                <li>Technologie 1</li>
-                <li>Technologie 2</li>
-            </ul>
+            <p>Debian 12, Apache2, isc-dhcp-server, BIND9, pfSense, VPN IPsec.</p>
             <h3>Ce que j'ai réalisé</h3>
             <ul>
-                <li>Étape ou tâche 1</li>
-                <li>Étape ou tâche 2</li>
+                <li>Un serveur web (site de 3 pages), un serveur DHCP et un serveur DNS (zones directe et inverse).</li>
+                <li>Deux pare-feu pfSense, un par site, avec accès à Internet testé.</li>
+                <li>Un VPN IPsec entre les deux pare-feux, puis des tests de communication entre les deux réseaux.</li>
             </ul>
-            <!-- Image ou schéma réseau : <img src="img/projet1.png" alt="Schéma du projet 1"> -->
-            <!-- Document : <a href="docs/projet1.pdf" target="_blank" rel="noopener" class="btn">Voir la documentation</a> -->
+            <h3>Ce que j'ai appris</h3>
+            <p>Mon tout premier projet : j'y ai découvert Linux en ligne de commande, les services réseau, l'adressage IP, la virtualisation, le pare-feu et le VPN.</p>
         </div>
     </dialog>
 
