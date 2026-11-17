@@ -184,14 +184,66 @@
             <p>À travers ces 3 thèmes :</p>
 
             <h3>Thème 1 : Quelles sont les différentes cyberattaques ?</h3>
-            <div class="box">
-                <i class="fi-web"></i>
-                <a href="https://www.kaspersky.fr/resource-center/threats/ddos-attacks" target="_blank" rel="noopener">Qu'est-ce qu'une attaque DDoS ?</a>
-                <p>Résumé de l'article à compléter.</p>
+            <p>J'ai classé les attaques selon ce qu'elles visent : la disponibilité d'un service, les utilisateurs, les données et les communications.</p>
+
+            <div class="box-grid">
+                <div class="box">
+                    <i class="fi-web"></i>
+                    <a href="https://www.kaspersky.fr/resource-center/threats/ddos-attacks" target="_blank" rel="noopener">Qu'est-ce qu'une attaque DDoS ?</a>
+                    <p><strong>Cible : la disponibilité.</strong> Une attaque DDoS (déni de service distribué) sature un serveur ou un réseau avec un trafic massif venant de nombreuses machines, pour le rendre indisponible aux utilisateurs légitimes.</p>
+                </div>
+
+                <div class="box">
+                    <i class="fi-web"></i>
+                    <a href="https://www.proofpoint.com/fr/threat-reference/phishing" target="_blank" rel="noopener">Qu'est-ce que le phishing (hameçonnage) ?</a>
+                    <p><strong>Cible : les utilisateurs.</strong> Des messages malveillants exploitent l'ingénierie sociale pour soutirer des identifiants ou des données sensibles. Variantes : spear phishing (victime ciblée), smishing (SMS), vishing (appel vocal) et fraude au président. Parade : ne pas cliquer sur les liens, former les utilisateurs et filtrer les e-mails.</p>
+                </div>
+
+                <div class="box">
+                    <i class="fi-web"></i>
+                    <a href="https://messervices.cyber.gouv.fr/guides/attaques-par-rancongiciels-tous-concernes" target="_blank" rel="noopener">ANSSI : Attaques par rançongiciels, tous concernés</a>
+                    <p><strong>Cible : les données.</strong> Un rançongiciel bloque les données d'une organisation et réclame une rançon. L'ANSSI note que ces attaques augmentent en nombre, en fréquence et en sophistication, et qu'elles peuvent menacer la continuité d'activité, voire la survie de la victime.</p>
+                </div>
+
+                <div class="box">
+                    <i class="fi-web"></i>
+                    <a href="https://www.wiz.io/fr-fr/academy/application-security/sql-injection-attacks" target="_blank" rel="noopener">Les attaques par injection SQL</a>
+                    <p><strong>Cible : les données d'une application web.</strong> Une donnée saisie par l'utilisateur modifie la requête envoyée à la base de données : l'attaquant peut contourner l'authentification, puis extraire, modifier ou supprimer des données. Parade : requêtes préparées, validation des entrées et moindre privilège sur la base.</p>
+                </div>
+
+                <div class="box">
+                    <i class="fi-web"></i>
+                    <a href="https://www.proofpoint.com/fr/threat-reference/man-in-the-middle-attack-mitm" target="_blank" rel="noopener">Qu'est-ce qu'une attaque « man-in-the-middle » ?</a>
+                    <p><strong>Cible : les communications.</strong> L'attaquant s'interpose entre deux correspondants pour lire, voire modifier leurs échanges, par exemple par empoisonnement ARP sur un Wi-Fi public, ou par usurpation DNS. Parade : VPN sur les réseaux publics et authentification à deux facteurs.</p>
+                </div>
+
+                <div class="box">
+                    <i class="fi-web"></i>
+                    <a href="https://cyber.gouv.fr/actualites/panorama-de-la-cybermenace-2025/" target="_blank" rel="noopener">ANSSI : Panorama de la cybermenace 2025</a>
+                    <p><strong>Vue d'ensemble.</strong> Publié le 11 mars 2026. Espionnage et sabotage d'infrastructures critiques, hausse des vols de données, et compromission des équipements en bordure de réseau (pare-feu, VPN), très recherchés car souvent vulnérables.</p>
+                </div>
             </div>
 
             <h3>Thème 2 : Peut-on réellement se protéger des cyberattaques ?</h3>
+            <div class="box-grid">
+                <div class="box">
+                    <i class="fi-web"></i>
+                    <a href="https://cyber.gouv.fr/actualites/panorama-de-la-cybermenace-2025/" target="_blank" rel="noopener">ANSSI : une menace qui reste forte</a>
+                    <p>En 2025, l'ANSSI a traité 3 586 événements de sécurité, soit 18 % de moins qu'en 2024, mais la menace reste élevée et plus diffuse. Elle insiste sur l'application des mesures de base, notamment avec la directive NIS 2.</p>
+                </div>
+            </div>
+
             <h3>Thème 3 : Quelles pratiques pour se protéger ?</h3>
+            <div class="box-grid">
+                <div class="box">
+                    <i class="fi-web"></i>
+                    <a href="https://messervices.cyber.gouv.fr/guides/en-guideline-healthy-information-system-42-measures" target="_blank" rel="noopener">ANSSI : 42 mesures pour la sécurité d'un système d'information</a>
+                    <p>Un guide de 42 mesures, de niveau standard ou renforcé, pour sécuriser le système d'information d'une organisation, avec le travail nomade et la séparation des usages.</p>
+                </div>
+            </div>
+
+            <p><strong>Ce que j'ai mis en pratique :</strong> pare-feu pfSense et OPNsense, VPN IPsec, segmentation en VLAN avec règles de pare-feu selon le moindre privilège, sauvegardes automatisées avec RAID 1, supervision avec Zabbix, et coffre-fort de mots de passe en stage.
+            </p>
         </section>
 
         <section id="contact">
