@@ -154,7 +154,7 @@
                 <button type="button" class="btn" data-modal="projet3">Voir projet</button>
             </div>
             <div class="rectangle">
-                <h1>Projet 4 : titre du projet</h1>
+                <h1>Projet 4 :  Infrastructure multi-sites sécurisée (Perpignan / Bordeaux)</h1>
                 <button type="button" class="btn" data-modal="projet4">Voir projet</button>
             </div>
 
@@ -353,25 +353,25 @@
     <dialog id="projet4" class="modal" aria-labelledby="projet4-titre">
         <div class="modal-content">
             <div class="modal-header">
-                <h2 id="projet4-titre">Projet 4 : titre du projet</h2>
+                <h2 id="projet4-titre">Projet 4 : Infrastructure multi-sites sécurisée (Perpignan / Bordeaux)</h2>
                 <button type="button" class="modal-close" aria-label="Fermer">&times;</button>
             </div>
             <h3>Contexte</h3>
-            <p>Décris ici le contexte du projet (cadre, besoin, entreprise ou scénario).</p>
-            <h3>Objectifs</h3>
-            <p>Ce que le projet devait permettre de faire.</p>
+            <p>Projet de deuxième année de BTS SIO SISR : concevoir, déployer et sécuriser l'infrastructure d'une entreprise fictive, TechServices, répartie entre une succursale à Perpignan et un siège à Bordeaux, sur des machines virtuelles VMware.</p>
+            <img src="img/projet4.png" alt="Schéma logique : sites de Perpignan et Bordeaux reliés par un tunnel IPsec, avec pare-feu OPNsense, VLAN, DMZ et VPN nomade">
             <h3>Technologies utilisées</h3>
-            <ul>
-                <li>Technologie 1</li>
-                <li>Technologie 2</li>
-            </ul>
+            <p>OPNsense, Windows Server 2022 (AD DS, DNS, DHCP, GPO), Windows 10, Debian, Apache2 (HTTPS), rsyslog, proxy Squid, VPN IPsec (IKEv2) et OpenVPN.</p>
             <h3>Ce que j'ai réalisé</h3>
             <ul>
-                <li>Étape ou tâche 1</li>
-                <li>Étape ou tâche 2</li>
+                <li>Documentation technique : plan d'adressage, schémas logique et physique, matrice de flux, cahier de tests et planning Kanban.</li>
+                <li>Perpignan : domaine Active Directory, DHCP et DNS, segmentation en VLAN avec relais DHCP, NAT et filtrage des flux sortants.</li>
+                <li>Filtrage web avec un proxy Squid (blocage de sites par liste noire).</li>
+                <li>Bordeaux : serveur web Apache en HTTPS dans une DMZ et serveur Syslog centralisant les journaux.</li>
+                <li>Interconnexion : tunnel IPsec entre les deux pare-feux et VPN nomade OpenVPN.</li>
+                <li>Tests de sécurité : administration des routeurs inaccessible aux utilisateurs, aucune fuite en clair si le tunnel tombe.</li>
             </ul>
-            <!-- Image ou schéma réseau : <img src="img/projet4.png" alt="Schéma du projet 4"> -->
-            <!-- Document : <a href="docs/projet4.pdf" target="_blank" rel="noopener" class="btn">Voir la documentation</a> -->
+            <h3>Ce que j'ai appris</h3>
+            <p>J'y ai appris à concevoir une architecture multi-sites, à durcir un réseau avec des règles de pare-feu (principe du moindre privilège), à monter des VPN et à rédiger une documentation technique exploitable.</p>
         </div>
     </dialog>
 
