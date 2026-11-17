@@ -267,16 +267,17 @@
             <h3>Missions</h3>
             <p>Mettre en place et présenter à la direction un coffre-fort de mots de passe open source, Vaultwarden, tester son intégration avec d'autres services, puis participer à la mise en place d'une solution de téléphonie sur IP.</p>
             <h3>Technologies utilisées</h3>
-            <p>Debian, Proxmox, Vaultwarden, Keycloak, Ansible, cron, Kamailio, Linphone, reverse proxy, TLS. Environnement entièrement open source et virtualisé.</p>
+            <p>Debian, Proxmox, Vaultwarden, PostgreSQL, Keycloak, Ansible, cron, Kamailio, Linphone, reverse proxy, TLS. Environnement entièrement open source et virtualisé.</p>
             <h3>Ce que j'ai réalisé</h3>
             <ul>
                 <li>Recherche, installation et configuration de Vaultwarden dans une machine virtuelle, puis présentation à la direction, qui s'est montrée très satisfaite. Nous avons ensuite formé les employés à son utilisation.</li>
-                <li>Tests avec le coffre-fort : authentification unique (SSO) avec Keycloak, sauvegarde automatique avec cron et restauration, envoi de mails avec un serveur SMTP.</li>
+                <li>Tests avec le coffre-fort : authentification unique (SSO) avec Keycloak et envoi de mails avec un serveur SMTP.</li>
+                <li>Sauvegarde automatique toutes les heures avec cron (base PostgreSQL, données et configuration), avec un script de restauration.</li>
                 <li>Déploiement automatisé avec Ansible : installation des paquets et configuration de Vaultwarden.</li>
                 <li>Participation à la mise en place d'une VoIP avec Kamailio : passage en TLS, mise en place d'un reverse proxy et configuration de Linphone. Cette mission n'était pas terminée à mon départ : le reverse proxy ne retransmettait pas encore la réponse du serveur.</li>
             </ul>
             <h3>Ce que j'ai appris</h3>
-            <p>J'ai découvert la virtualisation avec Proxmox, l'automatisation avec Ansible, l'authentification centralisée et la VoIP. J'ai aussi appris à présenter une solution à la direction, à former des utilisateurs et à travailler en équipe sur un projet technique.</p>
+            <p>J'ai découvert la virtualisation avec Proxmox, l'automatisation avec Ansible, l'authentification centralisée, les sauvegardes et la VoIP. J'ai aussi appris à présenter une solution à la direction, à former des utilisateurs et à travailler en équipe sur un projet technique.</p>
         </div>
     </dialog>
 
