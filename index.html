@@ -307,25 +307,22 @@
     <dialog id="projet2" class="modal" aria-labelledby="projet2-titre">
         <div class="modal-content">
             <div class="modal-header">
-                <h2 id="projet2-titre">Projet 2 : titre du projet</h2>
+                <h2 id="projet2-titre">Projet 2 : Infrastructure Active directoy</h2>
                 <button type="button" class="modal-close" aria-label="Fermer">&times;</button>
             </div>
             <h3>Contexte</h3>
-            <p>Décris ici le contexte du projet (cadre, besoin, entreprise ou scénario).</p>
-            <h3>Objectifs</h3>
-            <p>Ce que le projet devait permettre de faire.</p>
+            <p>Deuxième projet de ma première année de BTS SIO : déployer l'infrastructure Active Directory d'une entreprise fictive, TechServices, avec quatre services (RH, Comptabilité, Technique, Direction), sur des machines virtuelles.</p>
             <h3>Technologies utilisées</h3>
-            <ul>
-                <li>Technologie 1</li>
-                <li>Technologie 2</li>
-            </ul>
+            <p>Windows Server 2019/2022, Active Directory (AD DS), DNS, stratégies de groupe (GPO), serveur de fichiers, IIS, pfSense, Windows 10/11.</p>
             <h3>Ce que j'ai réalisé</h3>
             <ul>
-                <li>Étape ou tâche 1</li>
-                <li>Étape ou tâche 2</li>
+                <li>Un contrôleur de domaine : annuaire organisé en unités d'organisation, avec utilisateurs et groupes de sécurité par service.</li>
+                <li>Des GPO : fond d'écran par service, mot de passe renforcé, panneau de configuration interdit au service RH.</li>
+                <li>Un serveur de fichiers : lecteurs réseau commun et propres à chaque service, accès restreint par groupe, quotas.</li>
+                <li>Un serveur web IIS hébergeant l'intranet de l'entreprise, avec authentification Windows, et un pare-feu limitant les accès.</li>
             </ul>
-            <!-- Image ou schéma réseau : <img src="img/projet2.png" alt="Schéma du projet 2"> -->
-            <!-- Document : <a href="docs/projet2.pdf" target="_blank" rel="noopener" class="btn">Voir la documentation</a> -->
+            <h3>Ce que j'ai appris</h3>
+            <p>J'y ai découvert l'Active Directory et les GPO. J'ai aussi résolu un problème de jonction au domaine, causé par le clonage des machines virtuelles (SID identiques), grâce à l'outil Sysprep.</p>
         </div>
     </dialog>
 
