@@ -366,6 +366,27 @@ p1, p2, p3 {
     font-size: 1rem;
 }
 
+/* Veille : fiches en 2 colonnes */
+#veille .box-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 1.5rem;
+    max-width: 1000px;
+    margin: 1rem 0 2rem;
+}
+
+#veille .box-grid .box {
+    max-width: none;
+    margin: 0;
+    align-content: flex-start;
+}
+
+@media (max-width: 700px) {
+    #veille .box-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
 /* ---------- Contact ---------- */
 #contact {
     background-color: rgba(20, 24, 35, 0.6); /* lisibilité sur l'image de fond */
