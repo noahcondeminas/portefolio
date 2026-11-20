@@ -303,7 +303,7 @@ p1, p2, p3 {
     margin: 0;
     padding: 0.75rem 1rem;
     object-fit: contain;
-    background-color: grey;
+    background-color: white;
     border-radius: 8px;
     box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.15);
 }
