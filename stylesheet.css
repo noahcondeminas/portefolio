@@ -289,6 +289,25 @@ p1, p2, p3 {
     vertical-align: middle;
 }
 
+/* ---------- Mes outils : logos ---------- */
+#skills .tools {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.25rem;
+    margin-top: 1rem;
+}
+
+#skills .tools img {
+    width: 150px;
+    height: 90px;
+    margin: 0;
+    padding: 0.75rem 1rem;
+    object-fit: contain;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.15);
+}
+
 /* ---------- Projets : cartes ---------- */
 #projets .rectangle {
     display: flex;
